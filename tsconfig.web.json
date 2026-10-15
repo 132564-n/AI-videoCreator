@@ -1,0 +1,20 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "declaration": false,
+    "types": ["vite/client", "vitest/globals"]
+  },
+  "include": [
+    "apps/web/src/**/*.ts",
+    "apps/web/src/**/*.tsx",
+    "packages/contracts/src/**/*.ts",
+    "packages/domain/src/**/*.ts",
+    "tests/ui/**/*.ts",
+    "tests/ui/**/*.tsx",
+    "vite.config.ts"
+  ]
+}
+

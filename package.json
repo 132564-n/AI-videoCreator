@@ -1,0 +1,46 @@
+{
+  "name": "ai-video-creator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0 <23"
+  },
+  "scripts": {
+    "build": "npm run build:web && npm run build:server",
+    "build:web": "vite build",
+    "build:server": "tsc -p tsconfig.server.json",
+    "check": "tsc -p tsconfig.web.json --noEmit && tsc -p tsconfig.server.json --noEmit",
+    "dev:server": "tsx apps/server/src/main.ts",
+    "dev:web": "vite",
+    "start": "node dist/server/apps/server/src/main.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "tsx tests/e2e/run.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "13.0.3",
+    "fflate": "0.8.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.7",
+    "@types/better-sqlite3": "9.6.0",
+    "@types/node": "22.16.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "axe-core": "4.14.0",
+    "jsdom": "28.1.0",
+    "playwright-core": "1.63.0",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.3",
+    "vitest": "5.0.3"
+  }
+}
+

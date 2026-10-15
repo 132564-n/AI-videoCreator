@@ -1,0 +1,14 @@
+node_modules/
+.npm-cache/
+dist/
+coverage/
+.vite/
+*.log
+*.db
+*.db-shm
+*.db-wal
+.env
+.env.*
+!.env.example
+test-results/
+playwright-report/

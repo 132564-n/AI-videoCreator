@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist/server",
+    "rootDir": ".",
+    "types": ["node"]
+  },
+  "include": [
+    "apps/server/src/**/*.ts",
+    "packages/contracts/src/**/*.ts",
+    "packages/domain/src/**/*.ts",
+    "packages/storage/src/**/*.ts",
+    "tests/**/*.ts"
+  ],
+  "exclude": ["tests/ui/**/*.tsx"]
+}
+
